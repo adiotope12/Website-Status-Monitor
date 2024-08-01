@@ -1,5 +1,5 @@
 # Website-Status-Monitor
-This project is an addition to another project where I set up a website on my Raspberry Pi, which you can view here: https://www.topeadio.com/.
+This project is an addition to another project where I set up a simple website on my Raspberry Pi, which you can view here: https://www.topeadio.com/.
 
 The purpose of this Azure Function is to constantly monitor the status of the website and notify me should the status not be available. This was inspired by my time as an automation engineering intern at Indiana Farmers Insurance. Having learned more about different types of automation, I thought it'd be a good idea to implement something similar for my site.
 
