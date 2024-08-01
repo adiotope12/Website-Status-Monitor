@@ -33,7 +33,7 @@ namespace ServerStatus
 
             if (Environment.GetEnvironmentVariable("AzureWebJobs.Function1.Disabled") != "1")
             {
-                var client = new SecretClient(vaultUri: new Uri("https://myserverstatuskeyvault12.vault.azure.net/"), credential: new DefaultAzureCredential());
+                var client = new SecretClient(vaultUri: new Uri("KeyVaultEndpt"), credential: new DefaultAzureCredential());
                 KeyVaultSecret secret = client.GetSecret("EmailKeyThingy");
                 var connectionString = secret.Value;
                 var emailClient = new EmailClient(connectionString);
